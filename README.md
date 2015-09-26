@@ -2,6 +2,7 @@
 Random sentence generator from Google ngram data set.
 
 To run the mumbler:
+
 1. Run the get_ngrams script by calling the def get_2_grams. This process can be distributed accross several nodes by passing the 2gramfile number count range and a machine count. I.e "python -c 'import get_ngrams; get_ngrams.get_2_grams(0,30,1)' would be run to collect 2gram files 0 through 29 on machine 1.
 
 2. If the data collection occurs on multiple nodes, run the secondary data processing step, preprocess_letters.py. This will combine 2gram word counts by the first letter of the first word.
